@@ -1,0 +1,17 @@
+.shadow-grey {
+  position: absolute;
+  width: 567px;
+  height: 322px;
+  left: 1170px;
+  top: 827px;
+
+  background: linear-gradient(
+    179.71deg,
+    rgba(255, 255, 255, 0.06) 0.25%,
+    rgba(255, 255, 255, 0.68) 21.81%,
+    rgba(255, 255, 255, 0.85) 38.06%,
+    rgba(255, 255, 255, 0.98) 56.6%,
+    #ffffff 68.87%,
+    #ffffff 99.75%
+  );
+}

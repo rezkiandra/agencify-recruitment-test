@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Agencify</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+		rel="stylesheet" />
+	<link
+		href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+		rel="stylesheet" />
+	<script src="https://cdn.tailwindcss.com"></script>
+	<link rel="stylesheet" href="./css/poppins.css" />
+	<link rel="stylesheet" href="./css/dm-sans.css" />
+	<link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body class="lg:h-[1382px] h-[1087px]">
+	<nav
+		class="lg:flex lg:flex-row lg:items-center lg:justify-between lg:h-[136px] shadow-lg h-[65px] flex flex-row justify-between lg:px-0 px-10">
+		<a href="javascript:void(0)" class="lg:ml-[111px] ml-0 lg:pt-0 pt-[25px]">
+			<img src="./assets/img/agencify.png" alt="agencify" class="lg:w-[221px] w-[108px]" />
+		</a>
+		<button id="hamburgerButton" class="lg:hidden">
+			<img src="./assets/img/hamburger.svg" alt="menu" class="lg:hidden w-[30px]" />
+		</button>
+		<ul class="lg:flex lg:items-center" id="hamburgerContent">
+			<li class="flex flex-col bg-[#FFFFFF] relative top-0 left-0 z-20 items-center gap-10 lg:flex lg:flex-row">
+				<a href="javascript:void(0)" class="poppins-semibold text-[#E75A7C] text-[22px]">Accueil</a>
+				<div class="dropdown-button">
+					<button id="dropdownButtonExpertise" type="button" class="poppins-medium flex items-center gap-2 text-[22px]">
+						<span>Notre expertise</span>
+						<img src="./assets/img/arrow-down.png" alt="arrow-down" class="w-[22px]" />
+					</button>
+					<button id="dropdownToggleExpertise" class="hidden px-4 py-2 text-white bg-blue-500 rounded poppins-medium">
+						Toggle Dropdown
+					</button>
+					<div id="dropdownContentExpertise"
+						class="hidden poppins-medium bg-[#FFFFFF] w-[387px] h-[371px] rounded-[26px] absolute shadow-[0px_0px_15px_rgba(0,0,0,0.2)] mt-[25px] ease-in-out duration-500 animation-fade-in-down">
+						<div class="flex flex-row items-center justify-start mt-[34px] ml-[47px]">
+							<a href="javascript:void(0)" class="flex items-center justify-center gap-3">
+								<img src="./assets/img/magento-logo.png" alt="magento-logo" class="w-[40px] h-[40px]" />
+								<div class="flex flex-col">
+									<span>Magento</span>
+									<span class="text-[#868686]">Le CMS incontournable</span>
+								</div>
+							</a>
+						</div>
+						<div class="flex flex-row items-center justify-start mt-[34px] ml-[47px]">
+							<a href="javascript:void(0)" class="flex items-center justify-center gap-3">
+								<img src="./assets/img/wordpress-logo.png" alt="wordpress-logo" class="w-[40px] h-[40px]" />
+								<div class="flex flex-col">
+									<span>Wordpress</span>
+									<span class="text-[#868686]">Le CMS le plus connu</span>
+								</div>
+							</a>
+						</div>
+						<div class="flex flex-row items-center justify-start mt-[34px] ml-[47px]">
+							<a href="javascript:void(0)" class="flex items-center justify-center gap-3">
+								<img src="./assets/img/laravel-logo.png" alt="laravel-logo" class="w-[40px] h-[40px]" />
+								<div class="flex flex-col">
+									<span>Laravel</span>
+									<span class="text-[#868686]">Le Framework compétant</span>
+								</div>
+							</a>
+						</div>
+						<div class="flex flex-row items-center justify-start mt-[34px] ml-[47px]">
+							<a href="javascript:void(0)" class="flex items-center justify-center gap-3">
+								<img src="./assets/img/woocommerce-logo.png" alt="woocommerce-logo" class="w-[40px] h-[40px]" />
+								<div class="flex flex-col">
+									<span>Laravel</span>
+									<span class="text-[#868686]">Création de commerce</span>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="dropdown-button">
+					<button id="dropdownButtonServices" type="button" class="poppins-medium flex items-center gap-2 text-[22px]">
+						<span>Nos services</span>
+						<img src="./assets/img/arrow-down.png" alt="arrow-down" class="w-[22px]" />
+					</button>
+					<button id="dropdownToggleServices" class="hidden px-4 py-2 text-white bg-blue-500 rounded poppins-medium">
+						Toggle Dropdown
+					</button>
+					<div id="dropdownContentServices"
+						class="hidden poppins-medium bg-[#FFFFFF] w-[387px] h-[371px] rounded-[26px] absolute shadow-[0px_0px_15px_rgba(0,0,0,0.2)] mt-[25px] ease-in-out duration-500 animation-fade-in-down">
+						<div class="flex flex-row items-center justify-start mt-[34px] ml-[47px]">
+							<a href="javascript:void(0)" class="flex items-center justify-center gap-3">
+								<img src="./assets/img/web-optimization.png" alt="web-optimization" class="w-[40px] h-[40px]" />
+								<div class="flex flex-col">
+									<div class="flex flex-row items-center gap-3">
+										<span>Optimisation</span>
+										<span
+											class="flex items-center justify-center gap-1 w-[116px] h-[22px] rounded-[40px] bg-[#0AC45F26] px-1">
+											<img src="./assets/img/verified.png" alt="verified" class="w-[14px] h-[14px]" />
+											<span class="text-[10px] text-[#0AC45F] poppins-semibold">La plus populaire</span>
+										</span>
+									</div>
+									<span class="text-[#868686]">Web</span>
+								</div>
+							</a>
+						</div>
+						<div class="flex flex-row items-center justify-start mt-[34px] ml-[47px]">
+							<a href="javascript:void(0)" class="flex items-center justify-center gap-3">
+								<img src="./assets/img/design-graphic.png" alt="design-graphic" class="w-[40px] h-[40px]" />
+								<div class="flex flex-col">
+									<span>Design graphique</span>
+									<span class="text-[#868686]">Web & print</span>
+								</div>
+							</a>
+						</div>
+						<div class="flex flex-row items-center justify-start mt-[34px] ml-[47px]">
+							<a href="javascript:void(0)" class="flex items-center justify-center gap-3">
+								<img src="./assets/img/web-development.png" alt="web-development" class="w-[40px] h-[40px]" />
+								<div class="flex flex-col">
+									<span>Développement web</span>
+									<span class="text-[#868686]">Développement web</span>
+								</div>
+							</a>
+						</div>
+						<div class="flex flex-row items-center justify-start mt-[34px] ml-[47px]">
+							<a href="javascript:void(0)" class="flex items-center justify-center gap-3">
+								<img src="./assets/img/cs.png" alt="cs" class="w-[40px] h-[40px]" />
+								<div class="flex flex-col">
+									<span>Suivi & support</span>
+									<span class="text-[#868686]">Dans votre projet</span>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<a href="javascript:void(0)" class="poppins-medium text-[22px]">A propos</a>
+				<a href="javascript:void(0)" class="poppins-medium text-[22px]">Contact</a>
+			</li>
+		</ul>
+		<a href="javascript:void(0)"
+			class="hidden bg-[#E75A7C] text-white rounded-[23px] lg:flex lg:items-center gap-2 px-10 mr-[111px] dm-sans text-[20px] h-[52px]">
+			<img src="./assets/img/arrow-right.png" alt="arrow-right" class="w-[41px]" />
+			Demander un devis
+		</a>
+	</nav>
+
+	<main class="flex flex-col items-center lg:items-start lg:flex lg:flex-row lg:justify-start">
+		<div class="lg:mt-[150px] lg:pl-[154px]">
+			<h3
+				class="text-[#E75A7C] poppins-medium lg:text-[30px] mb-[16px] lg:mb-[32px] lg:text-[30px] text-[15px] leading-[22.5px] lg:text-start text-center mt-[48px] lg:mt-0">
+				Transformez votre vision en réalité numérique !
+			</h3>
+			<h1
+				class="lg:text-[80px] text-[25px] poppins-semibold lg:leading-[104px] leading-[32.5px] lg:mx-0 mx-[50px] lg:text-start text-center">
+				L’agence digital dédié aux entreprises
+			</h1>
+			<p class="poppins-medium text-[22px] mt-[64px] leading-[33px] lg:block hidden">
+				AGENCIFY est une agence française spécialisée dans le Développement
+				<br />
+				Web, qui identifie vos besoins pour vous accompagner dans la création
+				<br />
+				de votre site sur-mesure et dans vos projets digitaux.
+			</p>
+			<div class="flex flex-col items-center justify-center mx-auto lg:hidden mt-[-30px]">
+				<img src="./assets/img/person.png" alt="person" class="w-[1250px] mt-[40px] z-0 relative" />
+				<img src="./assets/img/shadow.png" alt="shadow" class="w-[567px] relative z-10 mt-[-170px]" />
+			</div>
+			<div
+				class="lg:flex lg:flex-row flex flex-col items-center lg:items-center gap-4 lg:gap-8 lg:mt-[96px] dm-sans-extrabold text-[20px] relative z-10 mt-[-50px]">
+				<a href="javascript:void(0)"
+					class="bg-[#E75A7C] lg:w-[330px] w-[209px] text-[15px] lg:text-[20px] text-white rounded-[38px] lg:py-4 lg:px-10 py-2 text-center">Recevoir
+					nos offres</a>
+				<a href="javascript:void(0)"
+					class="border-[2px] lg:w-[330px] w-[209px] border-[#E75A7C] text-[15px] lg:text-[20px] text-[#E75A7C] rounded-[38px] lg:py-4 lg:px-10 py-2 text-center">Prendre
+					un rendez-vous</a>
+			</div>
+		</div>
+		<div class="hidden lg:flex lg:flex-col lg:items-center">
+			<img src="./assets/img/person.png" alt="person" class="w-[1250px] mt-[40px] mr-[154px] z-0 relative" />
+			<div
+				class="lg:block hidden bg-[#FFFFFF] absolute z-0 w-[318px] h-[228px] right-[90px] top-[440px] rounded-[15px] shadow-[0px_0px_15px_rgba(0,0,0,0.2)] p-6">
+				<img src="./assets/img/triangle.png" alt="triangle" class="bottom-[-20px] left-[-1px] absolute" />
+				<span class="poppins-medium text-[15px]">
+					"Une expérience parfaite pour <br />
+					obtenir mon site internet! Le <br />
+					processus a été rapide et efficace.”
+				</span>
+				<span class="flex flex-row items-center gap-2 mt-4">
+					<img src="./assets/img/full-star.png" alt="start" />
+					<img src="./assets/img/full-star.png" alt="start" />
+					<img src="./assets/img/full-star.png" alt="start" />
+					<img src="./assets/img/full-star.png" alt="start" />
+					<img src="./assets/img/half-star.png" alt="start" />
+				</span>
+				<div class="flex flex-row items-center gap-2 gap-3 mt-4 poppins-medium">
+					<img src="./assets/img/person2.png" alt="person2" />
+					<div class="flex flex-col justify-between">
+						<span class="text-[18px]">Thibault Ernout</span>
+						<span class="text-[14px]">Client du 9 Juin 2024</span>
+					</div>
+				</div>
+			</div>
+			<img src="./assets/img/shadow.png" alt="shadow" class="w-[567px] mr-[154px] relative z-10 mt-[-220px]" />
+		</div>
+	</main>
+</body>
+<script src="./js/dropdown.js"></script>
+<script>
+	const hamburgerButton = document.getElementById("hamburgerButton");
+	const hamburgerContent = document.getElementById("hamburgerContent");
+
+	hamburgerButton.addEventListener("click", () => {
+		hamburgerContent.classList.toggle("hidden");
+	});
+</script>
+
+</html>
